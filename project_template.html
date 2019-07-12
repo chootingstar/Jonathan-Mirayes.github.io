@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ProjectPage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <a href="contact.html">
+            <h1>Jonathan E. Mirayes</h1>
+        </a>
+    </div>
+    <div id="split">
+    <div id="clickable">
+        <ul>
+            <div class="projects">
+                <h3>Hit me from out of the blue</h3>
+                <button class="descriptA"><img src="https://www.placecage.com/c/200/300" alt="The man from Krypton"></button>
+            </div>
+            <div class="projects">
+                <h3>I can't believe it myself</h3>
+                <button class="descriptB"><img src="https://www.placecage.com/c/200/300" alt="The man from Krypton"></button>
+            </div>
+            <div class="projects">
+                <h3>Suddenly I'm up on top of the world</h3>
+                <button class="descriptC"><img src="https://www.placecage.com/c/200/300" alt="The man from Krypton"></button>s
+            </div>
+            <div class="projects">
+                <h3>It should've been somebody else</h3>
+                <button class="descriptD"><img src="https://www.placecage.com/c/200/300" alt="The man from Krypton"></button>
+            </div>
+        </ul>
+    </div>
+    <div id="descriptions">
+       <p class="Non-Descript">Welcome to the project! Click on any of the pictures to learn more about them.</p>
+        <p hidden class="descriptA">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Aliquet risus feugiat in ante metus dictum at. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Porttitor eget dolor morbi non arcu risus quis varius quam. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Turpis in eu mi bibendum neque egestas. Et malesuada fames ac turpis. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Pretium viverra suspendisse potenti nullam ac tortor. Nunc congue nisi vitae suscipit.</p>
+        <p hidden class="descriptB">Risus pretium quam vulputate dignissim suspendisse in. Neque laoreet suspendisse interdum consectetur libero. Massa id neque aliquam vestibulum morbi blandit cursus risus at. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Arcu non odio euismod lacinia at. Non tellus orci ac auctor augue. Integer enim neque volutpat ac tincidunt. Elementum tempus egestas sed sed risus pretium. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Amet justo donec enim diam vulputate. Luctus venenatis lectus magna fringilla urna porttitor. Sed libero enim sed faucibus turpis in eu mi bibendum. At lectus urna duis convallis convallis. Turpis tincidunt id aliquet risus feugiat in ante.</p>
+        <p hidden id="descriptC">Cat ta tat mat cat dripfs hse woe new mit kit bit taco shaning box. Caught mot tot pot creapy crawly shot dot. Beg teg neg egg, Ipple tipple nerrrrrrrd!</p>
+        <p hidden id="descriptD">Blerb Blerb</p>
+        <p hidden id="descriptE">Blerb is the word</p>
+    </div>
+    </div>
+    <footer><a href="index.html">More projects!</a></footer>
+    <script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+} 
+    </script>
+    <script>
+         document.getElementsByClassName("descriptA").onclick = function {aFunction()};
+        
+        
+        var DS = [document.getElementsByClassName("Non-Descript"), document.getElementsByClassName("descriptB"), document.getElementsByClassName("descriptC"), document.getElementsByClassName("descriptD"), document.getElementsByClassName("descriptE")]
+        
+        var i = 0;
+        
+        var hidden = DS[i].reliableHiddenOffsets;
+        
+        aFunction() {
+            if(document.getElementsByClassName("descriptA").visibility == false){
+                 document.getElementsByClassName("descriptA").classList.remove("hidden")
+            }
+            for(i; i < 5; i++){
+                if(DS[i].visibility == true){
+                    DS[i].classList.add("hidden");
+                }
+            }
+        }
+        
+    
+    </script>
+</body>
+</html>

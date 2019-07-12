@@ -1,0 +1,74 @@
+/* Styling thanks to W3Schools for the sticky headers */ 
+/* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+    text-align: center;
+}
+
+/*Link styling*/
+body > .header #myHeader a {
+    color: white;
+    text-decoration: none;
+}
+
+.projects a {
+    color: black;
+    text-decoration: none;
+}
+
+.titles a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: sticky;
+  top: 0;
+    z-index: 1;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+} 
+
+/* Footer */
+.titles {
+    padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+    text-align: center;
+}
+
+/* The position and color scheme of the project titles over the pictures*/
+.projects h3{
+    position: absolute;
+    padding: 1em;
+    z-index: 0;
+    color: white;
+    text-shadow: 2px 2px 1px #000000;
+    
+}
+
+#hidden h1{
+    text-align: center;
+}
+
+/* The header inside of contact.html*/
+#conthead {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+    text-align: center
+}
+
+/* The form in contact.html */

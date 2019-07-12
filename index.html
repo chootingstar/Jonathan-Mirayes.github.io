@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <a href="contact.html">
+            <h1>Jonathan E. Mirayes</h1>
+        </a>
+        
+        <nav>
+            <ol>
+                <div>Link to best project</div>
+                <div>Link to my contact page</div>
+                <div>Link to my github place on the internet... I don't remember what's it called</div>
+            </ol>
+        </nav>
+    </div>
+    <div id="hidden">
+       <img src="" alt="">
+       <h1>Projects</h1>
+       <img src="" alt="">
+        <script>
+            var slideSource = document.getElementById('slideSource');
+
+document.getElementById('handle').onclick = function () {
+  slideSource.classList.toggle('fade');
+}
+        </script>
+    </div>
+    <div class="projects">
+        <ul>
+            <div>
+              <h3>Project</h3>
+               <a href="project_template.html"><img src="https://www.placecage.com/c/200/300" alt="The man from Krypton"></a>
+               <a href="">
+                   <p>Check my Github</p>
+               </a>
+                
+<!--                <i class="fab fa-github" style="font-size:60px;"></i>-->
+            </div>
+            <div>
+              <h3>Project</h3>
+               <img src="https://www.placecage.com/c/200/300" alt="The man from Krypton">
+               <a href="">
+                   <p>Check my Github</p>
+               </a>
+                
+<!--                <i class="fab fa-github" style="font-size:60px;"></i>-->
+            </div>
+            <div>
+              <h3>Project</h3>
+               <img src="https://www.placecage.com/c/200/300" alt="The man from Krypton">
+                <a href="">
+                   <p>Check my Github</p>
+               </a>
+<!--                <i class="fab fa-github" style="font-size:60px;"></i>-->
+            </div>
+            <div>
+              <h3>Project</h3>
+               <img src="https://www.placecage.com/c/200/300" alt="The man from Krypton">
+               <a href="">
+                   <p>Check my Github</p>
+               </a>
+                
+<!--                <i class="fab fa-github" style="font-size:60px;"></i>-->
+            </div>
+            <div>
+              <h3>Project</h3>
+               <img src="https://www.placecage.com/c/200/300" alt="The man from Krypton">
+               <a href="">
+                   <p>Check my Github</p>
+               </a>
+                
+<!--                <i class="fab fa-github" style="font-size:60px;"></i>-->
+            </div>
+        </ul>
+    </div>
+    <div class="titles">
+        <ul>
+<!--           This is a comment
+           Have a better decision for these three
+           as you want to get across as much information
+           as possible without leaving the front page.
+           IMPORTANT information-->
+            <li>Bio</li> 
+            <li>Strengths</li>
+            <li><a href="https://github.com/chootingstar" target="_blank">Git Hub Profile</a></li>
+            
+        </ul>
+    </div>
+    <script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+} 
+    </script>
+</body>
+</html>
